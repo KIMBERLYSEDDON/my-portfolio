@@ -1,0 +1,148 @@
+:root {
+    --green: mediumaquamarine;
+    --purple: mediumpurple;
+    --margin: 3rem;
+
+}
+
+main {
+    display: block;
+}
+
+section h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 200%;
+    padding: 5px;
+}
+footer {
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
+}
+.page-header {
+    text-transform: uppercase;
+}
+
+
+
+.page-header {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-color: ivory;
+    border: 1px solid red;
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    /* margin-bottom: 10px; */
+}
+.page-header h1 {
+    color: mediumaquamarine;
+    font-size: 3rem;
+    line-height: 250%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+.page-header h1 span {
+    color:mediumpurple;
+}
+
+.nav-bar {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+.nav-bar ul {
+    list-style-type: none;
+    
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+.subheader {
+    margin-right: 100px;
+    margin-top: 50px;
+}
+h2 .subheader::after {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 5;
+    border-right: 3px solid khaki;
+}
+.about {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 200px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.about img {
+    position: relative;
+    left: 300px;
+    max-width: 200px;
+    height: auto;
+
+}
+.about {
+    position: flex;
+    flex-wrap: wrap;
+}
+.about-me {
+    position: relative;
+    left: 350px;
+    top: -80px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    border: 2px solid blue;
+    max-width: 850px;
+    height: auto;
+    padding: 2rem;
+}
+/* .about-me::before, .about-me::after {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+} */
+.work {
+    border: 2px solid purple;
+    margin: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.work card {
+    padding: 10px;
+    border: 2px solid purple;
+    align-content: center;
+}
+
+.work img {
+    max-width: 200px;
+    height: auto;
+}
+
+.project-info {
+    background-color: white;
+    position: relative;
+    bottom: 50px;
+    z-index: 3;
+}
+.project-title {
+    font-size: larger;
+}
+
