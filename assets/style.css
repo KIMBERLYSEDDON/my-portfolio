@@ -1,7 +1,8 @@
 :root {
     --green: mediumaquamarine;
     --purple: mediumpurple;
-    --margin: 3rem;
+    --dblue: midnightblue;
+    --pink: mediumvioletred;
 
 }
 * {
@@ -12,8 +13,8 @@ main {
     display: block;
 }
 img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 section h2 {
@@ -45,14 +46,14 @@ footer {
     /* margin-bottom: 10px; */
 }
 .page-header h1 {
-    color: mediumaquamarine;
+    color: var(--green);
     font-size: 3rem;
     line-height: 250%;
     margin-left: 3rem;
     margin-top: 3rem;
 }
 .page-header h1 span {
-    color:mediumpurple;
+    color: var(--purple);
 }
 
 .nav-bar {
@@ -76,7 +77,7 @@ footer {
 .link {
     text-decoration: none;
     font-size:larger;
-    color: mediumvioletred;
+    color: var(--pink);
     position: relative;
 }
 .link::after {
@@ -99,63 +100,67 @@ footer {
 }
 
 .subheader {
-    padding: 3px;
-    color: mediumaquamarine;
+    /* position: absolute; */
+    /* left: 5%; */
+    float:left;
+    display: block;
+    margin-right: 10%;
+    padding: 10px;
+    color: var(--green);
+    width: 200px;
+    height: auto;
+    text-align: end;
+    border-right: 5px solid var(--purple);
 }
 .about {
-    border-left: 5px solid mediumpurple;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    /* justify-content: center; */
     padding: 1rem;
     margin-top: 200px;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    /* margin-left: 4rem; */
+    /* margin-right: 4rem; */
 
 }
-.about h3 {
-    border-right: 5px solid mediumpurple;
-    display: block;
-    align-items: right;
-}
+
 .about img {
-    position: relative;
-
-    margin: auto;
-    /* left: 25%;
-    top: 50%; */
+    max-width: 300px;
+    max-height: 300px;
     padding: auto;
-    border: 10px double mediumvioletred;
+    border: 10px double var(--pink);
 
 }
 .about-me {
-    position: relative;
-    left: 25%;
-    top: -80px;
     font-family: 'Courier New', Courier, monospace;
-    line-height: 1.5;
+    line-height: 2;
     text-align: justify;
     text-indent: 5%;
     /* border: 2px solid blue; */
-    max-width: 850px;
+    max-width: 550px;
     height: auto;
     padding: 2rem;
 }
 .about-me::before {
     content: "“";
-    color: midnightblue;
+    font-size: 30px;
+    color: var(--dblue);
     
 }
 .about-me::after {
     content: "”";
+    font-size: 30px;
+    color: var(--dblue);
 
 }
 .work {
-    /* border: 2px solid purple; */
-    margin: 4rem;
-    padding: auto;
+    border: 2px solid purple;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* margin: 4rem; */
+    padding: 1rem;
 }
 .project-cards {
     display: flex;
@@ -163,13 +168,18 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: 25%;
-    margin-left: 25%;
+    flex-basis: 600px;
+    /* margin-right: 25%;*/
+    margin-right: 30%;
     cursor: pointer;
 }
 .card {
-    padding: 0 20px 20px;
+    flex-basis: 50%;
+    padding: 0,0;
     opacity: .6;
+}
+.card:first-child {
+    flex-basis: 100%;
 }
 .card:hover {
     opacity: 1;
@@ -196,14 +206,19 @@ footer {
 }
 .contact {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    border: 2px solid purple;
-    width: 60%;
-    padding:20px;
+    /* justify-content: center; */
+    /* border: 2px solid purple; */
+    /* width: 80%%; */
+    padding: 1rem;
     margin: auto;
     line-height: 20px;
 }
+/* .contact h2 {
+    display: absolute;
+    left:20%;
+} */
 .contact ul li {
     display: inline;
     padding: 15px;
