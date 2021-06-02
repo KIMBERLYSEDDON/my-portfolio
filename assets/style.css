@@ -4,9 +4,16 @@
     --margin: 3rem;
 
 }
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 main {
     display: block;
+}
+img {
+    max-width: 300px;
+    max-height: 300px;
 }
 
 section h2 {
@@ -30,8 +37,8 @@ footer {
     width: 100%;
     height: 200px;
     background-size: cover;
-    background-color: ivory;
-    border: 1px solid red;
+    background-color: white;
+    outline: transparent;
     position: fixed;
     z-index: 5;
     top: 0px;
@@ -49,8 +56,8 @@ footer {
 }
 
 .nav-bar {
+    margin-right: 40px;
     padding-top: 15px;
-    margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -63,86 +70,144 @@ footer {
 
 .nav-bar ul li {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 40px;
     
 }
-.subheader {
-    margin-right: 100px;
-    margin-top: 50px;
+.link {
+    text-decoration: none;
+    font-size:larger;
+    color: mediumvioletred;
+    position: relative;
 }
-h2 .subheader::after {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    z-index: 5;
-    border-right: 3px solid khaki;
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.subheader {
+    padding: 3px;
+    color: mediumaquamarine;
 }
 .about {
-    border: 2px solid black;
+    border-left: 5px solid mediumpurple;
+    /* border: 2px solid black; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    justify-content: center;
+    padding: 1rem;
     margin-top: 200px;
     margin-left: 4rem;
     margin-right: 4rem;
+
+}
+.about h3 {
+    border-right: 5px solid mediumpurple;
+    display: block;
+    align-items: right;
 }
 .about img {
     position: relative;
-    left: 300px;
-    max-width: 200px;
-    height: auto;
 
-}
-.about {
-    position: flex;
-    flex-wrap: wrap;
+    margin: auto;
+    /* left: 25%;
+    top: 50%; */
+    padding: auto;
+    border: 10px double mediumvioletred;
+
 }
 .about-me {
     position: relative;
-    left: 350px;
+    left: 25%;
     top: -80px;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.5;
-    border: 2px solid blue;
+    text-align: justify;
+    text-indent: 5%;
+    /* border: 2px solid blue; */
     max-width: 850px;
     height: auto;
     padding: 2rem;
 }
-/* .about-me::before, .about-me::after {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
-} */
+.about-me::before {
+    content: "“";
+    color: midnightblue;
+    
+}
+.about-me::after {
+    content: "”";
+
+}
 .work {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     margin: 4rem;
+    padding: auto;
+}
+.project-cards {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
+    align-items: center;
+    justify-content: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    cursor: pointer;
 }
-
-.work card {
-    padding: 10px;
-    border: 2px solid purple;
-    align-content: center;
+.card {
+    padding: 0 20px 20px;
+    opacity: .6;
 }
+.card:hover {
+    opacity: 1;
+    transition: .6s;
+    transform: scale(2);
+    z-index: 1;
 
-.work img {
-    max-width: 200px;
-    height: auto;
+}
+.card:hover .project-info {
+    opacity: 0;
+    transition: .6s ease-in-out;
 }
 
 .project-info {
     background-color: white;
+    opacity: .8;
+    width: fit-content;
     position: relative;
     bottom: 50px;
     z-index: 3;
 }
 .project-title {
     font-size: larger;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid purple;
+    width: 60%;
+    padding:20px;
+    margin: auto;
+    line-height: 20px;
+}
+.contact ul li {
+    display: inline;
+    padding: 15px;
+    list-style-type: none;
+    
 }
 
