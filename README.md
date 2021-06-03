@@ -6,7 +6,8 @@ This is my first professional portfolio of work so that employers can see what I
 
 ## Installation
 
-To view this application visit the website provided.
+To view this application visit the website provided: 
+https://kimberlyseddon.github.io/my-portfolio/
 
 ## Usage
 

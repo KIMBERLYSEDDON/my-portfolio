@@ -5,6 +5,7 @@
     --pink: mediumvioletred;
 
 }
+/* sets font for entire project */
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -41,9 +42,11 @@ section h2 {
     margin-left: 3rem;
     margin-top: 3rem;
 }
+/* lets us add a second color to header */
 .page-header h1 span {
     color: var(--purple);
 }
+/* base of navigation bar */
 .nav-bar {
     margin-right: 40px;
     padding-top: 15px;
@@ -61,12 +64,14 @@ section h2 {
     margin-left: 40px;
     
 }
+/* sets unique look for links */
 .link {
     text-decoration: none;
     font-size:larger;
     color: var(--pink);
     position: relative;
 }
+/* sets unique affect for links */
 .link::after {
     content: "";
     position: absolute;
@@ -111,6 +116,7 @@ section h2 {
     border: 10px double var(--pink);
 
 }
+/* makes bio standout by modifying from base */
 .about-me {
     font-family: 'Courier New', Courier, monospace;
     line-height: 2;
@@ -120,6 +126,7 @@ section h2 {
     height: auto;
     padding: 3rem;
 }
+/* special quotation marks */
 .about-me::before {
     content: "“";
     font-size: 30px;
@@ -137,6 +144,7 @@ section h2 {
     flex-wrap: wrap;
     padding: 1rem;
 }
+/* contains all project cards in 1 box */
 .project-cards {
     display: flex;
     flex-wrap: wrap;
@@ -147,14 +155,17 @@ section h2 {
     margin-right: 30%;
     cursor: pointer;
 }
+/* sets project cards' size and default appearance */
 .card {
     flex-basis: 50%;
     padding: 0,0;
     opacity: .6;
 }
+/* makes first card larger */
 .card:first-child {
     flex-basis: 100%;
 }
+/* creates animation on card */
 .card:hover {
     opacity: 1;
     transition: .6s;
@@ -166,6 +177,7 @@ section h2 {
     opacity: 0;
     transition: .6s ease-in-out;
 }
+/* sets a readable description */
 .project-info {
     background-color: white;
     opacity: .8;
@@ -174,6 +186,7 @@ section h2 {
     bottom: 50px;
     z-index: 3;
 }
+/* slightly increases text size on title font */
 .project-title {
     font-size: larger;
 }
@@ -191,6 +204,7 @@ section h2 {
     list-style-type: none;
     
 }
+/* cute short goodbye/footer message */
 .footer-message {
     color: var(--dblue);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
