@@ -106,6 +106,8 @@ section h2 {
     max-width: 300px;
     max-height: 300px;
     padding: auto;
+    margin-top: 75px;
+    margin-left: -50px;
     border: 10px double var(--pink);
 
 }
@@ -116,7 +118,7 @@ section h2 {
     text-indent: 5%;
     max-width: 550px;
     height: auto;
-    padding: 2rem;
+    padding: 3rem;
 }
 .about-me::before {
     content: "“";
@@ -131,7 +133,6 @@ section h2 {
 
 }
 .work {
-    border: 2px solid purple;
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
