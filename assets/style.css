@@ -215,22 +215,9 @@ section h2 {
     justify-content: center;
     align-content: center;
 }
-/* Tried to get media query to work but ran out of time, page still mostly responsive */
-/* @media only screen and(max-width:768px){
-    .page-header h1 {
-        font-size: 30px;
-    }
-    .subheader {
-        font-size: smaller;
-    }
-    .contact ul li {
-        display: block;
-    }
+.deploy-link {
+    color: var(--pink);
+    background-color: white;
 }
-@media only screen and(max-width:476px){
-    .page-title {
-        font-size: 20px;
-    }
-} */
 
 
