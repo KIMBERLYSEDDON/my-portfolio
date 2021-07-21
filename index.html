@@ -1,155 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-  crossorigin="anonymous"
-/>
-  <link rel="stylesheet" href="./assets/reset.css" />
-  <link rel="stylesheet" href="./assets/style.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
 
-<html>
-<body>
-    <!-- header and nav area -->
-    <header class="page-header">
+  <html>
+    <body>
+      <!-- header and nav area -->
+      <header class="page-header">
         <h1 class="page-title">Kim<span class="berly">berly</span>Seddon</h1>
-        <nav class="nav-bar">
-           <ul>
-                <li>
-                    <a class="link" href="#about">About Me</a>
-                    </li>
-                <li> 
-                    <a class="link" href="#work">Work</a>
-                    </li>
-                <li>
-                    <a class="link" href="#contact">Contact</a>
-                    </li>
-            </ul>
+        <nav class="nav-bar p-3">
+          <ul>
+            <li>
+              <a class="link" href="#about">About Me</a>
+            </li>
+            <li>
+              <a class="link" href="#work">Work</a>
+            </li>
+            <li>
+              <a class="link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </nav>
-    </header>
-    <!-- main section of page -->
-    <main class="content">
-    <section id="about" class="about">
-        <h2 class="subheader">About <br> Me</h2>
-        <!-- <h2 class= "subheader" >Me</h2> -->
-            <img src="./images/kimber.jpg" alt="profile photo" class="profile-picture">
-            <!-- bio -->
-            <p class="about-me">
-                My love for computers and technology started at a young age. 
-            I remember being five-years-old and helping my dad set up our brand new Windows 2000 and I was hooked! 
-            I learned what I could at a young age and continued on until middle school where my interests grew and this 
-            fascinating world was put on the back burner. After exploring college for awhile I entered the service industry 
-            where I was a bartender and manager for six years. These days I'm finally taking the time to learn all I can about 
-            computers and internet technologies.
-            </p>
-    </section>
-    <!-- area to display past projects -->
-    <section id="work" class="work">
-        <h2 class="subheader">Work</h2>
-        <content class="project-cards">
-
-        <card class="card">
-            <img src="./images/creative-corner-in-progress.png" alt="project 1 screenshot">
-            <div class="project-info">
-                <h3 class="project-title">Project One</h3>
+      </header>
+      <!-- main section of page -->
+      <main class="content">
+        <section id="about" class="about">
+          <h2 class="subheader">
+            About <br/>
+            Me
+          </h2>
+          <!-- <h2 class= "subheader" >Me</h2> -->
+          <img
+            src="./images/kimber.jpg"
+            alt="profile photo"
+            class="profile-picture"
+          />
+          <!-- bio -->
+          <p class="about-me">
+            My love for computers and technology started at a young age. I
+            remember being five-years-old and helping my dad set up our brand
+            new Windows 2000 and I was hooked! I learned what I could at a young
+            age and continued on until middle school where my interests grew and
+            this fascinating world was put on the back burner. After exploring
+            college for awhile I entered the service industry where I was a
+            bartender and manager for six years. These days I'm finally taking
+            the time to learn all I can about computers and internet
+            technologies.
+          </p>
+        </section>
+        <!-- area to display past projects -->
+        <section id="work" class="work">
+          <h2 class="subheader">Work</h2>
+          <content class="project-cards">
+            <card class="card">
+              <img
+                src="./images/community-canvas.png"
+                alt="community canvas project"
+              />
+              <div class="project-info">
+                <h3 class="project-title">Community Canvas</h3>
                 <p class="project-description">
-                    still in progress...
+                  place for users to share and view street art
                 </p>
-            </div>
-            <a class="deploy-link link" href="https://github.com/KIMBERLYSEDDON/creative-corner">repo<i class="fas fa-code-branch"></i></a>
-        </card>
-        <card class="card">
-            <img src="./images/weather-dash.png" alt="weather dashboard project">
-            <div class="project-info">
+              </div>
+              <a
+                class="deploy-link link"
+                href="https://community-canvas-2.herokuapp.com/"
+                >website<i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="deploy-link link"
+                href="https://github.com/KIMBERLYSEDDON/community-canvas"
+                >repo<i class="fas fa-code-branch"></i
+              ></a>
+            </card>
+            <card class="card">
+              <img
+                src="./images/creative-corner-in-progress.png"
+                alt="creative corner screenshot"
+              />
+              <div class="project-info">
+                <h3 class="project-title">Creative Corner</h3>
+                <p class="project-description">
+                  to inspire artists in a creative block
+                </p>
+              </div>
+              <a
+                class="deploy-link link"
+                href="https://kimberlyseddon.github.io/creative-corner/"
+                >website<i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="deploy-link link"
+                href="https://github.com/KIMBERLYSEDDON/creative-corner"
+                >repo<i class="fas fa-code-branch"></i
+              ></a>
+            </card>
+            <card class="card">
+              <img src="./images/tech-blog.png" alt="tech blog project" />
+              <div class="project-info">
+                <h3 class="project-title">Tech Blog</h3>
+                <p class="project-description">fun blog for tech lovers</p>
+              </div>
+              <a
+                class="deploy-link link"
+                href="https://tech-obsessed.herokuapp.com/"
+                >website<i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="deploy-link link"
+                href="https://github.com/KIMBERLYSEDDON/tech-blog"
+                >repo<i class="fas fa-code-branch"></i
+              ></a>
+            </card>
+            <card class="card">
+              <img
+                src="./images/weather-dash.png"
+                alt="weather dashboard project"
+              />
+              <div class="project-info">
                 <h3 class="project-title">Weather Dashboard</h3>
-                <p class="project-description">
-                    for weather/forecast of city
-                </p>
-            </div>
-            <a class="deploy-link link" href="https://kimberlyseddon.github.io/weather-dashboard/">website<i class="fas fa-external-link-alt"></i></a>
-            <a class="deploy-link link" href="https://github.com/KIMBERLYSEDDON/weather-dashboard">repo<i class="fas fa-code-branch"></i></a>
-        </card>
+                <p class="project-description">for weather/forecast of city</p>
+              </div>
+              <a
+                class="deploy-link link"
+                href="https://kimberlyseddon.github.io/weather-dashboard/"
+                >website<i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="deploy-link link"
+                href="https://github.com/KIMBERLYSEDDON/weather-dashboard"
+                >repo<i class="fas fa-code-branch"></i
+              ></a>
+            </card>
 
-        <card class="card">
-            <img src="./images/word-sched.png" alt="screen shot of workday scheduler">
-            <div class="project-info">
+            <card class="card">
+              <img
+                src="./images/word-sched.png"
+                alt="screen shot of workday scheduler"
+              />
+              <div class="project-info">
                 <h3 class="project-title">Work Day Scheduler</h3>
-                <p class="project-description">
-                    color coded based on time
-                </p>
-            </div>
-            <a class="deploy-link link" href="https://kimberlyseddon.github.io/work-day-scheduler/">website<i class="fas fa-external-link-alt"></i></a>
-            <a class="deploy-link link" href="https://github.com/KIMBERLYSEDDON/work-day-scheduler">repo<i class="fas fa-code-branch"></i></a>
-        </card>
-
-        <!-- PLACEHOLDERS FOR FUTURE PROJECTS -->
-        <card class="card">
-            <img src="./images/tree-up.jpg" alt="view of tree tops from ground">
-            <div class="project-info">
-                <h3 class="project-title">Looking Up</h3>
-                <p class="project-description">
-                    a North Carolina forrest
-                </p>
-            </div>   
-        </card>
-
-        <card class="card">
-            <img src="./images/modern-art.jpg" alt="modern art fashioned from glass and metals">
-            <div class="project-info">
-                <h3 class="project-title">Modern Art</h3>
-                <p class="project-description">
-                    a piece in 21c Louisville, KY
-                </p>
-            </div>
-        </card>  
-
-    </content>
-    </section>
-    <!-- contact information -->
-    <section id="contact" class="contact">
-        <h2 class="subheader">Contact</h2>
-        <div>
+                <p class="project-description">color coded based on time</p>
+              </div>
+              <a
+                class="deploy-link link"
+                href="https://kimberlyseddon.github.io/work-day-scheduler/"
+                >website<i class="fas fa-external-link-alt"></i
+              ></a>
+              <a
+                class="deploy-link link"
+                href="https://github.com/KIMBERLYSEDDON/work-day-scheduler"
+                >repo<i class="fas fa-code-branch"></i
+              ></a>
+            </card>
+          </content>
+        </section>
+        <!-- contact information -->
+        <section id="contact" class="contact">
+          <h2 class="subheader">Contact</h2>
+          <div>
             <ul>
-                <li> 
-                    <i class="fas fa-phone"></i>: 
-                    <a class="link" href="#">724.777.7777</a>
-                </li>
-                <li> 
-                    <i class="far fa-envelope"></i>: 
-                    <a class="link" href="#">SeddonKimberly17@gmail.com</a>
-                </li>
-                <li> 
-                    <i class="fab fa-github"></i>: 
-                    <a class="link" href="https://github.com/KIMBERLYSEDDON">KIMBERLYSEDDON</a>
-                </li>
-                <li>
-                    <i class="fab fa-linkedin-in"></i>:
-                    <a class="link" href="https://www.linkedin.com/in/kimberlyseddon/">Kimberly Seddon</a>
-                </li>
-                <li>
-                    <a class="link" href="./images/Resume.pdf"><i class="far fa-file-pdf"></i>(resume)</a>
-                </li>
-        </ul>
-        </div>
-
-    </section>
-    </main>
-<!-- footer area -->
-    <footer>
-        <p class="footer-message">
-            Thanks for viewing!
-        </p>
-
-    </footer>
-    <script src="https://kit.fontawesome.com/178f0a4e7d.js" crossorigin="anonymous"></script>
-</body>
-
-
+              <li>
+                <i class="fas fa-phone"></i>:
+                <a class="link" href="#">724.777.7777</a>
+              </li>
+              <li>
+                <i class="far fa-envelope"></i>:
+                <a class="link" href="#">SeddonKimberly17@gmail.com</a>
+              </li>
+              <li>
+                <i class="fab fa-github"></i>:
+                <a class="link" href="https://github.com/KIMBERLYSEDDON"
+                  >KIMBERLYSEDDON</a
+                >
+              </li>
+              <li>
+                <i class="fab fa-linkedin-in"></i>:
+                <a
+                  class="link"
+                  href="https://www.linkedin.com/in/kimberlyseddon/"
+                  >Kimberly Seddon</a
+                >
+              </li>
+              <li>
+                <a class="link" href="./images/Resume.pdf"
+                  ><i class="far fa-file-pdf"></i>(resume)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- footer area -->
+      <footer>
+        <p class="footer-message">Thanks for viewing!</p>
+      </footer>
+      <script
+        src="https://kit.fontawesome.com/178f0a4e7d.js"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
 </html>
